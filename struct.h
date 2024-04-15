@@ -17,7 +17,6 @@ struct sym_table {
   char *name;
   sym_class class;
   t_synth type;
-  t_synth retour;
   unsigned int pos;
   size_t nb_params_var;
   size_t nb_local_var;

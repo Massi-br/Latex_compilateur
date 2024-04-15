@@ -14,7 +14,6 @@ sym_table *create_sym_tab(const char *name) {
 	strcpy(s->name, name);
 	s->class = FUNC;
 	s->type = NONE;
-	s->retour = NONE;
 	s->pos = 0;
 	s->nb_local_var = 0;
 	s->nb_params_var = 0;
@@ -56,7 +55,6 @@ int add_sym(sym_table *s, const char *name, sym_class class, int position, t_syn
 		p->nb_local_var = 0;
 		p->class = class;
 		p->type = type;
-		p->retour = NONE;
 		p->pos = position;
 		p->nb_params_var = 0;
 		p->next = NULL;

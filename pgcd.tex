@@ -1,0 +1,12 @@
+\begin{algo}{PGCD}{a,b}
+    \IF{a == b}
+      \RETURN{a}
+     \ELSE
+       \IF{a > b}
+          \CALL{PGCD}{a-b, b}
+        \ELSE
+          \CALL{PGCD}{a,b-a}
+        \FI
+      \FI
+\end{algo}
+   
